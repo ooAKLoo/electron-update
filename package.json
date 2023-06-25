@@ -4,22 +4,22 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder"
+    "start": "electron ."
   },
   "build": {
     "appId": "com.example.electron-updater",
     "mac": {
       "target": "dmg"
     },
-    "publish": [{
-      "provider": "github",
-      "owner": "ooAKLoo",
-      "repo": "electron-update",
-      "private": true
-    }]
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "your-github-username",
+        "repo": "your-github-repo"
+      }
+    ]
   },
-  "repository": "https://github.com/ooAKLoo/electron-update.git",
+  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
     "quick",
@@ -31,7 +31,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^25.1.0",
-    "electron-builder": "^22.13.1",
-    "electron-updater": "^4.5.1"
+    "electron-builder": "^24.4.0",
+    "electron-updater": "^6.1.1"
   }
 }
