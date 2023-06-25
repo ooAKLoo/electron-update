@@ -7,6 +7,11 @@
  */
 const { ipcRenderer } = require('electron')
 
+const { app } = require('electron').remote
+
+document.getElementById('app-version').innerText = app.getVersion()
+
+
 ipcRenderer.on('update_available', () => {
   ipcRenderer.removeAllListeners('update_available')
   alert('A new update is available. Downloading now...')
