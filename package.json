@@ -1,0 +1,37 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.electron-updater",
+    "mac": {
+      "target": "dmg"
+    },
+    "publish": [{
+      "provider": "github",
+      "owner": "ooAKLoo",
+      "repo": "electron-update",
+      "private": true
+    }]
+  },
+  "repository": "https://github.com/ooAKLoo/electron-update.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^25.1.0",
+    "electron-builder": "^22.13.1",
+    "electron-updater": "^4.5.1"
+  }
+}
